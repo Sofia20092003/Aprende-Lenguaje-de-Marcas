@@ -101,3 +101,17 @@ body{
         height: auto;
     }
 }
+
+@media (max-width: 1023px){
+    .tarjetas img{
+        width: 15rem;
+        height: auto;
+    }
+}
+
+@media(max-width:680px){
+    .tarjetas img{
+        width: 10rem;
+        height: auto;
+    }
+}
