@@ -1,0 +1,61 @@
+:root{
+    --font-family-main: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+    --font-family-tittles: "League Spartan", sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 70rem;
+    text-align: justify;
+    h1, h2, h3{
+        font-family: var(--font-family-tittles);
+        text-align: center;
+    }
+    font-family: var(--font-family-main);
+
+    section{ 
+        background-color: var(--background-card); 
+        padding: 1.5rem; 
+        border-radius: 1rem; 
+        margin-bottom: 1.5rem; 
+        position: relative; /*Necesario para que los elementos absolute dentro de estos contenedores se posicionen respecto a ellos.*/
+        border: none; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Sombra suave para efecto tarjeta */
+        transition: transform 0.4s ease, box-shadow 0.4s ease; /* Animaciones suaves */
+    } 
+    
+    section:hover{ 
+        transform: translateY(-5px); /* Efecto de elevación */
+        box-shadow: 0 20px 40px rgba(108, 23, 23, 0.306); 
+    } 
+}
+
+.titulo{
+    img{
+        display: block;
+        margin: 0 auto;
+        object-fit:contain; 
+        width: 50rem; 
+        height: 30rem; 
+        border-radius: 1rem;
+    }
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 2rem;
+    text-align: justify;
+
+    img{
+        display: block;
+        margin: 0 auto;
+        object-fit: cover; 
+        width: 25rem; 
+        height: 14rem;
+        border-radius: 0.7rem;
+    }
+}
+

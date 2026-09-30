@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación CSS</title>
+    <link rel="stylesheet" type="text/css" href="../css/paginaFlexYGrid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="titulo">
+            <h1>Maquetación CSS</h1>
+            <img src="../img/maquetacion_web.png" alt="Maquetación-WEB">
+        </section>
+    </header>
+    <section>
+        <h2>¿Para qué sirve?</h2>
+        <p>
+            La maquetación web consiste en organizar y distribuir 
+            los elementos de una página, como textos, imágenes, 
+            menús y botones, para crear una estructura clara y fácil de usar.
+        </p>
+    </section>
+    <section>
+        <h2>El papel de CSS:</h2>
+        <p>
+            HTML define la estructura y el contenido de la página. 
+            Por ejemplo, indica qué elementos son títulos, párrafos o enlaces. 
+            CSS controla su presentación y distribución: colores, tamaños, márgenes, 
+            espacios, alineación y posición.
+        </p>
+        <p>
+            Gracias a CSS, los elementos pueden colocarse en filas, 
+            columnas o zonas concretas de la página. Algunas técnicas habituales son:
+        </p>
+        <ul>
+            <li>Flexbox: organiza elementos principalmente en una fila o columna.</li>
+            <li>CSS Grid: crea diseños basados en filas y columnas.</li>
+            <li>Responsive Design: adapta la página a móviles, tabletas y ordenadores.</li>
+        </ul>
+    </section>
+    <section class="tarjetas">
+        <section class="flex">
+            <h2>Flexbox</h2>
+            <img src="../img/flexbox.png" alt="Flexbox">
+            <h3>Definición y Utilidad</h3>
+            <p>
+                Flexbox (CSS Flexible Box Layout) es un sistema de maquetación que permite 
+                organizar fácilmente los elementos dentro de un contenedor. 
+                Resuelve problemas habituales de diseño, como alinear elementos, distribuir el espacio disponible o 
+                crear estructuras que se adapten a distintos tamaños de pantalla.
+                El elemento que utiliza display: flex se convierte en un flex container o 
+                contenedor flexible. Sus elementos hijos pasan a ser flex items y pueden organizarse en una fila o en una columna.
+            </p>
+            <h3>Propiedades Principales: </h3>
+            <ul>
+                <li>display: flex: activa Flexbox.</li>
+                <li>flex-direction: define la dirección (row para filas o column para columnas).</li>
+                <li>justify-content: distribuye los elementos en el eje principal.</li>
+                <li>align-items: alinea los elementos en el eje perpendicular.</li>
+                <li>gap: establece un espacio entre los elementos.</li>
+            </ul>
+            <p>
+                Flexbox es especialmente útil para crear diseños adaptables, 
+                organizar menús, tarjetas, botones o cualquier grupo de elementos sin utilizar posiciones complicadas.
+            </p>
+        </section>
+        <section class="grid">
+            <h2>CSS Grid (Grid Layout)</h2>
+            <img src="../img/grid.png" alt="grid">
+            <h3>¿Qué es?</h3>
+            <p>
+                CSS Grid es un sistema de maquetación que permite organizar 
+                los elementos de una página web en filas y columnas. 
+                Es útil para crear estructuras ordenadas, como galerías, menús, tarjetas o diseños completos.
+            </p>
+            <h3>¿Qué problema resuelve?</h3>
+            <p>
+                Facilita la distribución y alineación de los elementos sin depender de muchos márgenes, 
+                posiciones o elementos flotantes. Grid permite controlar de forma sencilla el espacio y la posición de cada elemento.
+            </p>
+            <p>
+                El elemento principal es el grid container, el contenedor que utiliza display: grid. 
+                Sus elementos hijos se convierten en grid items, que pueden colocarse dentro de la cuadrícula.
+            </p>
+            <p>
+                Propiedades importantes:
+            </p>
+            <ul>
+                <li>grid-template-columns: define las columnas.</li>
+                <li>grid-template-rows: define las filas.</li>
+                <li>gap: establece el espacio entre elementos.</li>
+                <li>grid-column y grid-row: indican dónde se coloca un elemento.</li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <h2>Conclusión: </h2>
+        <p>
+            Flexbox está pensado principalmente para organizar 
+            elementos en una dimensión: una fila o una columna. 
+            Grid trabaja especialmente en dos dimensiones, controlando 
+            filas y columnas al mismo tiempo. Además, permite crear diseños 
+            responsive que se adaptan a distintos tamaños de pantalla.
+        </p>
+    </section>
+    <footer></footer>
+</body>
+</html>
