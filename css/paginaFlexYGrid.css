@@ -1,4 +1,9 @@
 :root{
+    --background-card: #e9eff5;
+    --background-card-secundary: #dce7f1;
+    --shadow-card: #5083a7;
+    --color-font-main: #2d495f;
+    --color-font-tittles: #1b2836;
     --font-family-main: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
     --font-family-tittles: "League Spartan", sans-serif;
 }
@@ -9,9 +14,11 @@ body{
     padding: 2rem 1rem;
     max-width: 70rem;
     text-align: justify;
+    color: var(--color-font-main);
     h1, h2, h3{
         font-family: var(--font-family-tittles);
         text-align: center;
+        color: var(--color-font-tittles);
     }
     font-family: var(--font-family-main);
 
@@ -20,15 +27,14 @@ body{
         padding: 1.5rem; 
         border-radius: 1rem; 
         margin-bottom: 1.5rem; 
-        position: relative; /*Necesario para que los elementos absolute dentro de estos contenedores se posicionen respecto a ellos.*/
-        border: none; 
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Sombra suave para efecto tarjeta */
+        position: relative; 
+        border: none;  
         transition: transform 0.4s ease, box-shadow 0.4s ease; /* Animaciones suaves */
     } 
     
     section:hover{ 
-        transform: translateY(-5px); /* Efecto de elevación */
-        box-shadow: 0 20px 40px rgba(108, 23, 23, 0.306); 
+        transform: translateY(-5px); 
+        box-shadow: 0 20px 40px var(--shadow-card); 
     } 
 }
 
@@ -40,6 +46,21 @@ body{
         width: 50rem; 
         height: 30rem; 
         border-radius: 1rem;
+    }
+}
+
+
+@media (max-width: 1023px){
+    .titulo img{
+        width: 30rem;
+        height: auto;   
+    }
+}
+
+@media(max-width:580px){
+    .titulo img{
+        width: 20rem;
+        height: auto;
     }
 }
 
@@ -57,5 +78,26 @@ body{
         height: 14rem;
         border-radius: 0.7rem;
     }
+
+    .flex{
+        background-color: var(--background-card-secundary);
+    }
+
+    .grid{
+        background-color: var(--background-card-secundary);
+    }
 }
 
+@media (max-width: 1023px){
+    .tarjetas img{
+        width: 15rem;
+        height: auto;
+    }
+}
+
+@media(max-width:680px){
+    .tarjetas img{
+        width: 10rem;
+        height: auto;
+    }
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #CEDDE9;
+    display: flex;
+    justify-content: space-between;
+    /* Separa logo a la izquierda y nav a la derecha */
+    align-items: center;
+    /* Centra verticalmente logo y enlaces */
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+header:hover{ 
+        transform: translateY(-5px); 
+        box-shadow: 0 20px 40px var(--shadow-card); 
+    } 
+
+/* Estilos de la lista del menú */
+header nav ul {
+    display: flex;
+    /* Pone los li en fila */
+    gap: 1.5rem;
+    /* Espacio entre cada enlace */
+    list-style: none;
+    /* Quita los puntos de la lista */
+}
+
+/* Estilos de los enlaces */
+header nav a {
+    text-decoration: none;
+    /* Quita el subrayado azul por defecto */
+    color: #2D495F;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: #5083A7;
+}
+
+.flecha-footer:hover {
+    color: #5083A7;
+
+}
+
+
+/* Selecciona la imagen del logo dentro del header */
+header a img {
+    height: 75px;
+    /* Controla la altura total */
+    object-fit: cover;
+    /* Ajusta el contenido dentro de la forma circular */
+    display: block;
+    /* Elimina desajustes de espacio inferior en el enlace */
+}
+
+main {
+    background-color: red;
+}
+
+footer {
+    background-color: #CEDDE9;
+    color: #2D495F;
+    display: flex;
+    justify-content: space-between;
+    /* Separa izquierda, centro y derecha */
+    align-items: center;
+    /* Centra verticalmente */
+    padding: 1rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Estilo para la flecha de volver arriba */
+footer .flecha-footer {
+    color: #2D495F;
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-size: 2rem;
+    /* Un poco más grande para que sea fácil pulsarla */
+}
