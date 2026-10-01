@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serialización</title>
+    <link rel="stylesheet" href="../css/paginaFlexYGrid.css">
+    <link rel="stylesheet" href="../css/yaml-json.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body id="arriba">
+    <header>
+        <a href="index.html">
+            <img src="../img/logo2.png" alt="Logo Lenguaje de Marcas">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="paginaFlexYGrid.html">FLEX / GRID</a></li>
+                <li><a href="yaml-json.html">YAML / JSON</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h1>Serialización</h1>
+            <img src="../img/yamljson.jpg" alt="Ejemplo de serialización">
+        </section>
+
+        <section>
+            <h2>¿Qué es?</h2>
+            <p>
+                La serialización es el proceso de convertir los datos o la estructura de un objeto en un formato, como
+                JSON o YAML, que pueda almacenarse o transmitirse. La deserialización es el proceso inverso: convertir
+                ese formato de nuevo en datos u objetos que el programa pueda utilizar.
+            </p>
+        </section>
+
+        <h2 class="subtitulo">Algunos tipos...</h2>
+
+        <section class="tarjetas serializacion-tarjetas">
+            <article class="articulo-yaml">
+                <h2>YAML</h2>
+                <img src="../img/yaml.png" alt="Ejemplo de datos en YAML">
+                <section class="bloque-texto">
+                    <h3>Definición</h3>
+                    <p>
+                        YAML (YAML Ain't Markup Language) es un formato de serialización de datos diseñado para ser
+                        fácilmente legible por las personas. Resuelve la complejidad visual de otros formatos al
+                        eliminar etiquetas, llaves o corchetes obligatorios, utilizando una sintaxis limpia y directa.
+                        El objetivo principal es estructurar información jerárquica de forma que cualquier desarrollador
+                        pueda entenderla y editarla de un vistazo sin cometer errores de formato.
+                    </p>
+                    <h3>¿Cómo organiza los datos?</h3>
+                    <p>
+                        Estructura la información mediante niveles de indentación estricta utilizando espacios (nunca
+                        tabuladores). Define pares de clave y valor mediante dos puntos, listas o colecciones usando un
+                        guión seguido de espacio, y permite agrupar bloques de datos complejos en estructuras anidadas
+                        de forma intuitiva.
+                    </p>
+                    <h3>Usos habituales</h3>
+                    <p>Es el estándar principal para archivos de configuración en entornos de desarrollo y servidores,
+                        como Docker Compose, Kubernetes, herramientas de integración continua (CI/CD) y definición de
+                        infraestructura como código.Es el estándar principal para archivos de configuración en entornos
+                        de desarrollo y servidores, como Docker Compose, Kubernetes, herramientas de integración
+                        continua (CI/CD) y definición de infraestructura como código.</p>
+                </section>
+            </article>
+
+            <article class="articulo-json">
+                <h2>JSON</h2>
+                <section class="bloque-texto">
+                    <h3>Definición</h3>
+                    <p>
+                        JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos basado en texto
+                        plano. Nació a partir de la sintaxis de objetos de JavaScript, pero hoy en día es completamente
+                        independiente del lenguaje. Resuelve el problema del envío masivo de información en la web,
+                        ofreciendo una alternativa mucho más rápida, ligera y sencilla de procesar que formatos clásicos
+                        más pesados como XML.
+                    </p>
+                    <h3>¿Cómo organiza la información?</h3>
+                    <p>
+                        Organiza la información encerrando objetos dentro de llaves con pares de clave y valor (donde
+                        las claves van obligatoriamente entre comillas dobles) y listas o arreglos ordenados dentro de
+                        corchetes. Todos los elementos se separan por comas y admite tipos de datos simples como texto,
+                        números, booleanos o nulos.
+                    </p>
+                    <h3>JSON y las APIs</h3>
+                    <p>Es el formato rey para la comunicación entre cliente y servidor en APIs REST, el intercambio de
+                        datos en aplicaciones web en tiempo real y la configuración de paquetes en proyectos de software
+                        (como package.json).</p>
+                </section>
+                <img src="../img/json.png" alt="Ejemplo de datos en JSON">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Diseño de Interfaces web</p>
+        <nav class="footer-enlaces" aria-label="Enlaces del pie de página">
+            <p>Práctica 1 &rarr;</p>
+            <a href="https://github.com/ikerrguez" target="_blank" rel="noopener noreferrer">Iker</a>
+            <a href="https://github.com/Sofia20092003" target="_blank" rel="noopener noreferrer">Sofía</a>
+            <a href="https://github.com/superfurry-tech" target="_blank" rel="noopener noreferrer">Fran</a>
+        </nav>
+        <a href="#arriba" class="flecha-footer" title="Volver arriba">↑</a>
+    </footer>
+</body>
+
+</html>
