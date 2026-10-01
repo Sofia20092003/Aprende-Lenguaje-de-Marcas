@@ -1,11 +1,14 @@
 .subtitulo {
-    /* separa un poco más de arriba que de abajo */
-    margin: 2.5rem 0 1rem;
+    /* elimina el margen predeterminado del subtítulo */
+    margin: 0;
 }
 
 .serializacion-tarjetas {
     /* sobrescribe la cuadrícula general de .tarjetas para colocar YAML y JSON en una sola columna */
     grid-template-columns: 1fr;
+    padding-top: 1.5rem;
+    /* separa las filas del Grid */
+    row-gap: 1.3rem;
 }
 
 .articulo-yaml,
@@ -33,11 +36,12 @@
     box-shadow: 0 20px 40px var(--shadow-card);
 }
 
-.articulo-yaml>h2,
-.articulo-json>h2 {
+.articulo-yaml>h3,
+.articulo-json>h3 {
     /* hace que los títulos ocupen las dos columnas y elimina su margen superior */
     grid-column: 1 / -1;
     margin-top: 0;
+    font-size: 1.4rem;
 }
 
 .articulo-yaml>img,
@@ -63,7 +67,7 @@
     box-shadow: none;
 }
 
-.bloque-texto h3 {
+.bloque-texto h4 {
     /* alinea subtítulo con img, reduce espacio con p y lo alinea a la izquierda */
     margin-top: 0;
     margin-bottom: 0.3rem;
@@ -109,10 +113,10 @@
     }
 
     /* coloca títulos, imágenes y textos en la única columna disponible y deja que Grid los coloque en filas automáticas */
-    .articulo-yaml>h2,
+    .articulo-yaml>h3,
     .articulo-yaml>img,
     .articulo-yaml>.bloque-texto,
-    .articulo-json>h2,
+    .articulo-json>h3,
     .articulo-json>img,
     .articulo-json>.bloque-texto {
         grid-column: 1;
