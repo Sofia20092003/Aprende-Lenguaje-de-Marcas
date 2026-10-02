@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 30px;
-    background-color: #f8fafc; /* Color 50 */
-    color: #293e51; /* Color 900 */
+    background-color: #f8fafc; 
+    color: #293e51; 
 }
 
 header {
@@ -118,4 +118,44 @@ footer a {
 
 footer a:hover {
     color: #1b2836; 
+}
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .sobre-asignatura {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-asignatura img {
+        width: 100%;
+    }
+
+    .cuadricula {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
