@@ -1,0 +1,135 @@
+.subtitulo {
+    /* elimina el margen predeterminado del subtítulo */
+    margin: 0;
+}
+
+.serializacion-tarjetas {
+    /* sobrescribe la cuadrícula general de .tarjetas para colocar YAML y JSON en una sola columna */
+    grid-template-columns: 1fr;
+    padding-top: 1.5rem;
+    /* separa las filas del Grid */
+    row-gap: 1.3rem;
+}
+
+.articulo-yaml,
+.articulo-json {
+    /* protege frente a contenidos muy largos */
+    min-width: 0;
+    display: grid;
+    /* crea dos columnas iguales y permite que se reduzcan sin desbordar el artículo */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    /* alinea la imagen y el texto en la parte superior de la fila */
+    align-items: start;
+    gap: 1.5rem;
+    background-color: var(--background-card-secundary);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    /* suaviza el movimiento y la sombra al pasar el ratón */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.articulo-yaml:hover,
+.articulo-json:hover {
+    /* eleva la tarjeta y añade una sombra cuando se pasa el ratón por encima */
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-card);
+}
+
+.articulo-yaml>h3,
+.articulo-json>h3 {
+    /* hace que los títulos ocupen las dos columnas y elimina su margen superior */
+    grid-column: 1 / -1;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.articulo-yaml>img,
+.articulo-json>img {
+    /* ajusta las imágenes al ancho de su columna, conserva su proporción y redondea sus esquinas */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.7rem;
+}
+
+.bloque-texto {
+    /* quita el aspecto de tarjeta de la sección de texto y desactiva su animación. Heredaba de section de paginaFlexYGrid.css */
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    transition: none;
+}
+
+.bloque-texto:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.bloque-texto h4 {
+    /* alinea subtítulo con img, reduce espacio con p y lo alinea a la izquierda */
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.bloque-texto p {
+    /* elimina el margen superior del párrafo y separa bloques de texto */
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.articulo-yaml>img {
+    /* la img ocupa la primera columna de la segunda fila */
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.articulo-yaml>.bloque-texto {
+    /* coloca el bloque de texto de YAML en la segunda columna y segunda fila */
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.articulo-json>.bloque-texto {
+    /* coloca el bloque de texto de JSON en la primera columna y segunda fila */
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.articulo-json>img {
+    /* coloca la imagen de JSON en la segunda columna y segunda fila */
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media (max-width: 767px) {
+
+    /* articulos pasan a columna única */
+    .articulo-yaml,
+    .articulo-json {
+        grid-template-columns: 1fr;
+    }
+
+    /* coloca títulos, imágenes y textos en la única columna disponible y deja que Grid los coloque en filas automáticas */
+    .articulo-yaml>h3,
+    .articulo-yaml>img,
+    .articulo-yaml>.bloque-texto,
+    .articulo-json>h3,
+    .articulo-json>img,
+    .articulo-json>.bloque-texto {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    /* coloca la img después del título */
+    .articulo-json>img {
+        order: 2;
+    }
+
+    /* coloca el texto después de la img */
+    .articulo-json>.bloque-texto {
+        order: 3;
+    }
+}

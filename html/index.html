@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominando Lenguajes de Marcas</title>
-    <link rel="icon" type="image/png" href="../img/logo_lenguajes_marcas_principal_transparente.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+
 </head>
 
-<body>
+<body id="arriba">
 
-    <div class="contenedor">
+    <!-- <div class="contenedor">
 
         <header>
 
-            <img src="../img/logo_lenguajes_marcas.png"alt="Logotipo de Lenguajes de Marcas"class="logo-img">
+            <img src="../img/logo_lenguajes_marcas.png" alt="Logotipo de Lenguajes de Marcas" class="logo-img">
 
             <nav>
                 <a href="#">Inicio</a>
@@ -23,105 +30,117 @@
                 <a href="#">YAML / JSON</a>
             </nav>
 
-        </header>
+        </header> -->
+
+    <header>
+        <a href="index.html">
+            <img src="../img/logo2.png" alt="Logo Lenguaje de Marcas">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="paginaFlexYGrid.html" target="_blank">FLEX / GRID</a></li>
+                <li><a href="yaml-json.html" target="_blank">YAML / JSON</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-        <section class="hero">
+    <section class="hero">
 
-            <h1>DOMINA LENGUAJES DE MARCAS</h1>
+        <h1>DOMINA LENGUAJES DE MARCAS</h1>
+
+        <p>
+            Haz que tus ideas cobren vida en la web.
+        </p>
+
+        <a href="#modulos" class="btn">Comenzar ahora</a>
+
+    </section>
+
+
+    <section id="sobre-asignatura" class="sobre-asignatura">
+
+        <img src="../img/marcas_lenguajes_hero_referencia.png" alt="Imagen relacionada con la asignatura">
+
+        <div class="texto-asignatura">
+
+            <h2>Sobre la asignatura</h2>
 
             <p>
-                Haz que tus ideas cobren vida en la web.
+                Es una asignatura en la que aprendemos a crear y
+                organizar contenido para páginas web.
             </p>
 
-            <a href="#modulos" class="btn">Comenzar ahora</a>
+            <p>
+                Trabajamos con lenguajes y herramientas para dar
+                forma a nuestras ideas.
+            </p>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <section id="sobre-asignatura" class="sobre-asignatura">
+    <section id="modulos" class="modulos">
 
-            <img src="../img/marcas_lenguajes_hero_referencia.png"
-                alt="Imagen relacionada con la asignatura">
+        <h2>¿Qué te gustaría aprender?</h2>
 
-            <div class="texto-asignatura">
+        <div class="cuadricula">
 
-                <h2>Sobre la asignatura</h2>
+            <article class="tarjeta">
+
+                <h3>HTML</h3>
+
+                <img src="../img/imagen-html.png" style="width: 100%; height: auto; display: block;" alt="HTML">
 
                 <p>
-                    Es una asignatura en la que aprendemos a crear y
-                    organizar contenido para páginas web.
+                    Aprende a crear la estructura de una página web.
                 </p>
+
+                <a href="https://www.w3schools.com/html/" target="_blank" class="btn">
+                    Saber más
+                </a>
+
+            </article>
+
+
+            <article class="tarjeta">
+
+                <h3>Flex / Grid</h3>
+                <img src="../img/flexgrid.jpg" style="width: 100%; height: auto; display: block;" alt="FLEX y GRID">
 
                 <p>
-                    Trabajamos con lenguajes y herramientas para dar
-                    forma a nuestras ideas.
+                    Aprende a organizar los elementos de una página web.
                 </p>
 
-            </div>
+                <a href="paginaFlexYGrid.html" class="btn">
+                    Saber más
+                </a>
 
-        </section>
-
-
-        <section id="modulos" class="modulos">
-
-            <h2>¿Qué te gustaría aprender?</h2>
-
-            <div class="cuadricula">
-
-                <article class="tarjeta">
-
-                    <h3>HTML</h3>
-
-                     <img src="../img/imagen-html.png" style="width: 100%; height: auto; display: block;" alt="HTML">
-
-                    <p>
-                        Aprende a crear la estructura de una página web.
-                    </p>
-
-                    <a href="https://www.w3schools.com/html/" target="_blank" class="btn">
-                        Saber más
-                    </a>
-
-                </article>
+            </article>
 
 
-                <article class="tarjeta">
+            <article class="tarjeta">
+                <h3>YAML / JSON</h3>
+                <img src="../img/yamljson.jpg" style="width: 100%; height: auto; display: block;" alt="YAML y JSON">
 
-                    <h3>Flex / Grid</h3>
-                    <img src="../img/flexgrid.jpg" style="width: 100%; height: auto; display: block;" alt="FLEX y GRID">
+                <p>
+                    Aprende a trabajar con diferentes formatos de datos.
+                </p>
 
-                    <p>
-                        Aprende a organizar los elementos de una página web.
-                    </p>
+                <a href="yaml-json.html" class="btn">
+                    Saber más
+                </a>
 
-                    <a href="paginaFlexYGrid.html" class="btn">
-                        Saber más
-                    </a>
+            </article>
 
-                </article>
+        </div>
 
-
-                <article class="tarjeta">
-                    <h3>YAML / JSON</h3>
-                    <img src="../img/yamljson.jpg" style="width: 100%; height: auto; display: block;" alt="YAML y JSON">
-
-                    <p>
-                        Aprende a trabajar con diferentes formatos de datos.
-                    </p>
-
-                    <a href="#" class="btn">
-                        Saber más
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
+    </section>
 
 
-        <footer class="footer">
+    <!-- <footer class="footer">
 
             <p class="footer-copy">
                 &copy; 2026. Todos los derechos reservados.
@@ -135,7 +154,18 @@
 
             <a href="#" class="volver-inicio"> ↑ Volver al inicio</a>
 
-        </footer>
+        </footer> -->
+
+    <footer>
+        <p>© 2026 - Diseño de Interfaces web</p>
+        <nav class="footer-enlaces" aria-label="Enlaces del pie de página">
+            <p>Práctica 1 &rarr;</p>
+            <a href="https://github.com/ikerrguez" target="_blank">Iker</a>
+            <a href="https://github.com/Sofia20092003" target="_blank">Sofía</a>
+            <a href="https://github.com/superfurry-tech" target="_blank">Fran</a>
+        </nav>
+        <a href="#arriba" class="flecha-footer" title="Volver arriba">↑</a>
+    </footer>
 
     </div>
 
