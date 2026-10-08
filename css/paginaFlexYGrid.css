@@ -1,3 +1,4 @@
+/*Creacion de variables globales para la página*/
 :root {
     --background-card: #e9eff5;
     --background-card-secundary: #dce7f1;
@@ -12,10 +13,12 @@ body {
     line-height: 1.6;
     margin: 0 auto;
     padding: 2rem 1rem;
+    /*Maximo de ancho del body de la página*/
     max-width: 70rem;
     text-align: justify;
     color: var(--color-font-main);
 
+    /*Requisitos para los titulos y subtitulos*/
     h1,
     h2,
     h3 {
@@ -24,8 +27,10 @@ body {
         color: var(--color-font-tittles);
     }
 
+    /*Tipo de letra para los párrafos*/
     font-family: var(--font-family-main);
 
+    /*Diseño de las tarjetas*/
     section {
         background-color: var(--background-card);
         padding: 1.5rem;
@@ -37,6 +42,7 @@ body {
         /* Animaciones suaves */
     }
 
+    /*Sombra de las tarjetas al pasar el mouse y activarse la animacion del requisito anterior*/
     section:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 40px var(--shadow-card);
@@ -55,6 +61,7 @@ body {
 }
 
 
+/*Media queri para hacer responsive el sitio en pantallas inferiores a 1023px y 580px*/
 @media (max-width: 1023px) {
     .titulo img {
         width: 30rem;
