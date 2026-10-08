@@ -1,14 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-<<<<<<< HEAD
-    padding: 30px;
     background-color: #f8fafc; 
-    color: #293e51; 
-=======
-    background-color: #f8fafc;
     color: #293e51;
->>>>>>> 8517c71089549ca03fac07c6fdcc17fabc873236
 }
 
 /* header {
@@ -114,68 +108,7 @@ header nav a {
     border-radius: 4px;
 }
 
-/* footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid #cedde9;
-    padding-top: 20px;
-    margin-top: 50px;
-    color: #3d698c;
-}
 
-footer a {
-    text-decoration: none;
-    color: #3d698c;
-    font-weight: bold;
-}
-
-footer a:hover {
-<<<<<<< HEAD
-    color: #1b2836; 
-}
-
-@media (max-width: 400px) {
-
-    body {
-        padding: 15px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 8px;
-    }
-
-    .hero h1 {
-        font-size: 25px;
-    }
-
-    .sobre-asignatura {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sobre-asignatura img {
-        width: 100%;
-    }
-
-    .cuadricula {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-=======
-    color: #1b2836;
-} */
 
 body#arriba header,
 body#arriba footer {
@@ -186,5 +119,30 @@ body#arriba header:hover,
 body#arriba footer:hover {
     transform: none;
     box-shadow: none;
->>>>>>> 8517c71089549ca03fac07c6fdcc17fabc873236
+
+}
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header, 
+    .sobre-asignatura, 
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-asignatura img, 
+    .cuadricula {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-asignatura {
+        padding: 15px;
+        margin: 15px;
+        box-sizing: border-box;
+    }
 }
