@@ -157,4 +157,13 @@ body#arriba footer:hover {
         margin: 15px;
         box-sizing: border-box;
     }
+    
+}
+
+@media (max-width: 400px) {
+    .hero{
+        h1{
+            font-size: 1.3rem;
+        }
+    }
 }
